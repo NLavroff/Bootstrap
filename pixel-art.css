@@ -1,12 +1,24 @@
+.container {
+    margin: 0 auto;
+    margin-top: 15px;
+}
 
 .box {
     width: 100px;
     height: 100px;
     background-color: orange;
     border: 3px solid white;
+    animation-name: colorChanging;
+    animation-duration: 10s;
+    transition : transform 1s
 }
 
-.container {
-    margin: 0 auto;
-    margin-top: 15px;
+@keyframes colorChanging {
+    0% {background-color: red;}
+    20% {background-color: yellow;}
+    30% {background-color: green;}
+    40% {background-color: blue;}
+    60% {background-color: purple;}
+    80% {background-color: pink;}
+    100% {background-color: red;}
 }
